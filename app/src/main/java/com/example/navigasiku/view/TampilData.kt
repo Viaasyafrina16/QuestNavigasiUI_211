@@ -26,8 +26,9 @@ import androidx.compose.ui.unit.sp
 import com.example.navigasiku.R
 
 @OptIn(ExperimentalMaterial3Api::class)
+@Composable
 fun TampilData(
-    onBackClick:()-> Unit
+    onBackBtnClick:()-> Unit
 ){
     val items = listOf(
         Pair(first = stringResource(id = R.string.nama_lengkap), second = "Contoh Nama"),
@@ -58,7 +59,7 @@ fun TampilData(
                 Spacer(modifier = Modifier.height(height = 10.dp))
                 Button(
                     modifier = Modifier.fillMaxWidth(),
-                    onClick = onBackClick
+                    onClick = onBackBtnClick
                 ) {
                     Text(text = stringResource(id = R.string.back))
                 }
