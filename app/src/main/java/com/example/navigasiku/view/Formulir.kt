@@ -43,10 +43,10 @@ fun FormIsian(
             modifier = Modifier
                 .padding(top = 20)
                 .width(250.dp),
+            label = {Text(text = "Nama Lengkap")},
+            onValueChange = {}
         )
-    }
 
-    }
 
 
 
